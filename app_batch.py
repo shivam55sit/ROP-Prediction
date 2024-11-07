@@ -8,7 +8,7 @@ from io import BytesIO
 pipe = joblib.load(open('rop_pipe.joblib', 'rb'))
 
 # Load the dataframe (for select box choices)
-df = joblib.load(open('final_dataframe_rop.sav', 'rb'))
+df = joblib.load(open('final_dataframe_rop.joblib', 'rb'))
 
 # Display the logo
 st.logo('lvpei.jfif', size="large")  
