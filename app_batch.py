@@ -1,14 +1,15 @@
 import streamlit as st
 import joblib
+import pickle
 import numpy as np
 import pandas as pd
 from io import BytesIO
 
 # Load the pre-trained pipeline
-pipe = joblib.load(open('rop_pipe.joblib', 'rb'))
+pipe = pickle.load(open('pipe.joblib', 'rb'))
 
 # Load the dataframe (for select box choices)
-df = joblib.load(open('final_dataframe_rop.joblib', 'rb'))
+df = pickle.load(open('final_dataframe_rop.sav', 'rb'))
 
 # Display the logo
 st.logo('lvpei.jfif', size="large")  
